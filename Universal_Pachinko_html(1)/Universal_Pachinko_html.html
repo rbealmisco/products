@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Viewer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./libs/creator.css" />
+        <script src="./libs/jquery.js"></script>
+        <script src="./libs/jquery.plugin.js"></script>
+        <script src="./libs/creator.js"></script>
+    </head>
+    <body>
+        <div id="Frame" class="animate-creator-container" style="width:4115px; height:4115px;"></div>         
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $("#Frame").animate360(
+{
+    "controls": {
+        "desktop": {
+            "align": "center",
+            "autohide": true,
+            "backgroundcolor": "#4a89dc",
+            "drag": "none",
+            "foregroundcolor": "#000000",
+            "fullscreen": "none",
+            "guide": false,
+            "hint": false,
+            "link": {
+                "display": false,
+                "uri": ""
+            },
+            "magnifier": "combine",
+            "palette": false,
+            "share": {
+                "email": false,
+                "facebook": false,
+                "qrcode": false,
+                "twitter": false,
+                "weibo": false
+            },
+            "spin": "none",
+            "style": "line",
+            "zoom": "separate"
+        },
+        "mobile": {
+            "align": "center",
+            "autohide": true,
+            "backgroundcolor": "#4a89dc",
+            "drag": "none",
+            "foregroundcolor": "#000000",
+            "fullscreen": "none",
+            "guide": false,
+            "link": {
+                "display": false,
+                "uri": ""
+            },
+            "magnifier": "none",
+            "palette": false,
+            "share": {
+                "email": false,
+                "facebook": false,
+                "qrcode": false,
+                "twitter": false,
+                "weibo": false
+            },
+            "spin": "none",
+            "style": "line",
+            "zoom": "separate"
+        }
+    },
+    "initview": {
+        "column": 1,
+        "partial": true
+    },
+    "layout": {
+        "center": true,
+        "fit": true
+    },
+    "object": {
+        "columns": 16,
+        "height": 4115,
+        "model": "cylindrical",
+        "name": "Universal_Pachinko_html",
+        "sector": false,
+        "width": 4115
+    },
+    "palette": [
+    ],
+    "path": {
+        "extension": ".jpg",
+        "icon": "./icons/",
+        "image": "./Universal_Pachinko_html/images/",
+        "webp": false
+    },
+    "rotation": {
+        "axis": "horizontal",
+        "direction": "cw",
+        "event": "drag",
+        "hint": false,
+        "inertia": true
+    },
+    "spin": {
+        "continue": false,
+        "direction": "cw",
+        "keepSize": false,
+        "repeat": false,
+        "time": 200,
+        "type": "static"
+    },
+    "sprite": {
+        "eachHeight": 0,
+        "eachWidth": 0,
+        "use": false
+    },
+    "version": "v3",
+    "zoom": {
+        "magnifierevent": "drag",
+        "ratio": 0,
+        "type": "none"
+    }
+}
+
+                );
+            });
+        </script>
+    </body>
+</html>
